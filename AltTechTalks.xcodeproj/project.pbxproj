@@ -17,6 +17,7 @@
 		24437646185E35180001C980 /* _ATTTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 24437642185E35180001C980 /* _ATTTalk.m */; };
 		24437656185E35C80001C980 /* libDCTCoreDataStack-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24437651185E35BB0001C980 /* libDCTCoreDataStack-OSX.a */; };
 		24437657185E35CE0001C980 /* libDCTCoreDataStack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2443764F185E35BB0001C980 /* libDCTCoreDataStack.a */; };
+		24437659185E4B890001C980 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24437658185E4B890001C980 /* iPhone.storyboard */; };
 		2449AE24185E1E1300B1DC44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE23185E1E1300B1DC44 /* Foundation.framework */; };
 		2449AE26185E1E1300B1DC44 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE25185E1E1300B1DC44 /* CoreGraphics.framework */; };
 		2449AE28185E1E1300B1DC44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE27185E1E1300B1DC44 /* UIKit.framework */; };
@@ -107,6 +108,7 @@
 		24437641185E35180001C980 /* _ATTTalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ATTTalk.h; sourceTree = "<group>"; };
 		24437642185E35180001C980 /* _ATTTalk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ATTTalk.m; sourceTree = "<group>"; };
 		24437647185E35BA0001C980 /* DCTCoreDataStack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DCTCoreDataStack.xcodeproj; path = DCTCoreDataStack/DCTCoreDataStack.xcodeproj; sourceTree = "<group>"; };
+		24437658185E4B890001C980 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 		2449AE20185E1E1300B1DC44 /* AltTechTalks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AltTechTalks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2449AE23185E1E1300B1DC44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2449AE25185E1E1300B1DC44 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -233,6 +235,7 @@
 				2449AE2C185E1E1300B1DC44 /* InfoPlist.strings */,
 				2449AE2F185E1E1300B1DC44 /* main.m */,
 				24437636185E335B0001C980 /* Model.xcdatamodeld */,
+				24437658185E4B890001C980 /* iPhone.storyboard */,
 				24437639185E33720001C980 /* AltTechTalks.h */,
 				2443763A185E33720001C980 /* AltTechTalks.m */,
 				2443763D185E35180001C980 /* Model */,
@@ -431,6 +434,7 @@
 			files = (
 				2449AE2E185E1E1300B1DC44 /* InfoPlist.strings in Resources */,
 				2449AE36185E1E1300B1DC44 /* Images.xcassets in Resources */,
+				24437659185E4B890001C980 /* iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
