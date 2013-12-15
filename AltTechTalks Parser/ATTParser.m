@@ -75,10 +75,8 @@
 		NSData *imageData = [NSURLConnection sendSynchronousRequest:imageRequest returningResponse:NULL error:NULL];
 		[fileManager createFileAtPath:[bundleImageURL path] contents:imageData attributes:nil];
 
-		NSLog(@"%@:%@ %@ %@", self, NSStringFromSelector(_cmd), imageLocation, remoteImageURL);
-
 		// Get the talk detail
-		NSArray *paragraphNodes = [node nodesForXPath:@"p" error:NULL];
+		NSArray *paragraphNodes = [node nodesForXPath:@"div[@class='media-body']/p" error:NULL];
 		NSXMLNode *paragraphNode = [paragraphNodes firstObject];
 		speaker.detail = paragraphNode.stringValue;
 
@@ -88,7 +86,8 @@
 
 		NSArray *components = [heading componentsSeparatedByString:@" - \""];
 		speaker.name = [components firstObject];
-		speaker.talkTitle = [[components lastObject] stringByReplacingOccurrencesOfString:@"\"" withString:@""];
+		if (components.count > 1)
+			speaker.talkTitle = [[components lastObject] stringByReplacingOccurrencesOfString:@"\"" withString:@""];
 	}
 
 	NSError *saveError = nil;

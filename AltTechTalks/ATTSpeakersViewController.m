@@ -10,6 +10,7 @@
 #import "AltTechTalks.h"
 #import "ATTSpeaker.h"
 #import "ATTSpeakerTableViewCell.h"
+#import "ATTSpeakerDetailViewController.h"
 #import <DCTCoreDataStack/DCTCoreDataStack.h>
 
 @interface ATTSpeakersViewController ()
@@ -41,6 +42,17 @@
 	self.speakers = [context executeFetchRequest:request error:&fetchError];
 
 	if (!self.speakers) NSLog(@"%@:%@ %@", self, NSStringFromSelector(_cmd), fetchError);
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
+	id viewController = segue.destinationViewController;
+	if ([viewController isKindOfClass:[ATTSpeakerDetailViewController class]]) {
+		ATTSpeakerDetailViewController *detailViewController = viewController;
+		NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
+		ATTSpeaker *speaker = [self.speakers objectAtIndex:selectedIndexPath.row];
+		detailViewController.speaker = speaker;
+	}
 }
 
 #pragma mark - UITableViewDataSource
