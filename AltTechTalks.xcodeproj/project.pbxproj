@@ -11,6 +11,10 @@
 		24437638185E335B0001C980 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24437636185E335B0001C980 /* Model.xcdatamodeld */; };
 		2443763B185E33720001C980 /* AltTechTalks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443763A185E33720001C980 /* AltTechTalks.m */; };
 		2443763C185E33720001C980 /* AltTechTalks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443763A185E33720001C980 /* AltTechTalks.m */; };
+		24437643185E35180001C980 /* ATTTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443763F185E35180001C980 /* ATTTalk.m */; };
+		24437644185E35180001C980 /* ATTTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443763F185E35180001C980 /* ATTTalk.m */; };
+		24437645185E35180001C980 /* _ATTTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 24437642185E35180001C980 /* _ATTTalk.m */; };
+		24437646185E35180001C980 /* _ATTTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 24437642185E35180001C980 /* _ATTTalk.m */; };
 		2449AE24185E1E1300B1DC44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE23185E1E1300B1DC44 /* Foundation.framework */; };
 		2449AE26185E1E1300B1DC44 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE25185E1E1300B1DC44 /* CoreGraphics.framework */; };
 		2449AE28185E1E1300B1DC44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE27185E1E1300B1DC44 /* UIKit.framework */; };
@@ -68,6 +72,10 @@
 		24437637185E335B0001C980 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		24437639185E33720001C980 /* AltTechTalks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AltTechTalks.h; sourceTree = "<group>"; };
 		2443763A185E33720001C980 /* AltTechTalks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AltTechTalks.m; sourceTree = "<group>"; };
+		2443763E185E35180001C980 /* ATTTalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTTalk.h; sourceTree = "<group>"; };
+		2443763F185E35180001C980 /* ATTTalk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTTalk.m; sourceTree = "<group>"; };
+		24437641185E35180001C980 /* _ATTTalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ATTTalk.h; sourceTree = "<group>"; };
+		24437642185E35180001C980 /* _ATTTalk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ATTTalk.m; sourceTree = "<group>"; };
 		2449AE20185E1E1300B1DC44 /* AltTechTalks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AltTechTalks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2449AE23185E1E1300B1DC44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2449AE25185E1E1300B1DC44 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +126,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2443763D185E35180001C980 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2443763E185E35180001C980 /* ATTTalk.h */,
+				2443763F185E35180001C980 /* ATTTalk.m */,
+				24437640185E35180001C980 /* Generated */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24437640185E35180001C980 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				24437641185E35180001C980 /* _ATTTalk.h */,
+				24437642185E35180001C980 /* _ATTTalk.m */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		2449AE17185E1E1300B1DC44 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +191,7 @@
 				24437636185E335B0001C980 /* Model.xcdatamodeld */,
 				24437639185E33720001C980 /* AltTechTalks.h */,
 				2443763A185E33720001C980 /* AltTechTalks.m */,
+				2443763D185E35180001C980 /* Model */,
 			);
 			path = AltTechTalks;
 			sourceTree = "<group>";
@@ -373,7 +401,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24437645185E35180001C980 /* _ATTTalk.m in Sources */,
 				2449AE34185E1E1300B1DC44 /* AppDelegate.m in Sources */,
+				24437643185E35180001C980 /* ATTTalk.m in Sources */,
 				2443763B185E33720001C980 /* AltTechTalks.m in Sources */,
 				2449AE30185E1E1300B1DC44 /* main.m in Sources */,
 			);
@@ -383,7 +413,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24437646185E35180001C980 /* _ATTTalk.m in Sources */,
 				24437635185E302A0001C980 /* ATTParser.m in Sources */,
+				24437644185E35180001C980 /* ATTTalk.m in Sources */,
 				2443763C185E33720001C980 /* AltTechTalks.m in Sources */,
 				2454B59E185E211B004C2FBD /* main.m in Sources */,
 			);
