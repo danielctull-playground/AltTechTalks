@@ -15,6 +15,8 @@
 		24437644185E35180001C980 /* ATTTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443763F185E35180001C980 /* ATTTalk.m */; };
 		24437645185E35180001C980 /* _ATTTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 24437642185E35180001C980 /* _ATTTalk.m */; };
 		24437646185E35180001C980 /* _ATTTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 24437642185E35180001C980 /* _ATTTalk.m */; };
+		24437656185E35C80001C980 /* libDCTCoreDataStack-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24437651185E35BB0001C980 /* libDCTCoreDataStack-OSX.a */; };
+		24437657185E35CE0001C980 /* libDCTCoreDataStack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2443764F185E35BB0001C980 /* libDCTCoreDataStack.a */; };
 		2449AE24185E1E1300B1DC44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE23185E1E1300B1DC44 /* Foundation.framework */; };
 		2449AE26185E1E1300B1DC44 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE25185E1E1300B1DC44 /* CoreGraphics.framework */; };
 		2449AE28185E1E1300B1DC44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE27185E1E1300B1DC44 /* UIKit.framework */; };
@@ -29,6 +31,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2443764E185E35BB0001C980 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24437647185E35BA0001C980 /* DCTCoreDataStack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2437B68D15B97C2600750117;
+			remoteInfo = DCTCoreDataStack;
+		};
+		24437650185E35BB0001C980 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24437647185E35BA0001C980 /* DCTCoreDataStack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2468705C18525E9200ADB152;
+			remoteInfo = "DCTCoreDataStack-OSX";
+		};
+		24437652185E35BB0001C980 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24437647185E35BA0001C980 /* DCTCoreDataStack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 24F6EC00158A261000CEDD41;
+			remoteInfo = DCTCoreDataStackTests;
+		};
+		24437654185E35BB0001C980 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24437647185E35BA0001C980 /* DCTCoreDataStack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 24E91B5715BEB1FA00E0DB54;
+			remoteInfo = "DCTCoreDataStack Demo";
+		};
 		2454B5B7185E262C004C2FBD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2449AE18185E1E1300B1DC44 /* Project object */;
@@ -76,6 +106,7 @@
 		2443763F185E35180001C980 /* ATTTalk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTTalk.m; sourceTree = "<group>"; };
 		24437641185E35180001C980 /* _ATTTalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ATTTalk.h; sourceTree = "<group>"; };
 		24437642185E35180001C980 /* _ATTTalk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ATTTalk.m; sourceTree = "<group>"; };
+		24437647185E35BA0001C980 /* DCTCoreDataStack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DCTCoreDataStack.xcodeproj; path = DCTCoreDataStack/DCTCoreDataStack.xcodeproj; sourceTree = "<group>"; };
 		2449AE20185E1E1300B1DC44 /* AltTechTalks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AltTechTalks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2449AE23185E1E1300B1DC44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2449AE25185E1E1300B1DC44 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24437657185E35CE0001C980 /* libDCTCoreDataStack.a in Frameworks */,
 				2449AE26185E1E1300B1DC44 /* CoreGraphics.framework in Frameworks */,
 				2449AE28185E1E1300B1DC44 /* UIKit.framework in Frameworks */,
 				2449AE24185E1E1300B1DC44 /* Foundation.framework in Frameworks */,
@@ -110,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24437656185E35C80001C980 /* libDCTCoreDataStack-OSX.a in Frameworks */,
 				2454B5C9185E290E004C2FBD /* libddcli.a in Frameworks */,
 				2454B59B185E211B004C2FBD /* Foundation.framework in Frameworks */,
 			);
@@ -143,6 +176,17 @@
 				24437642185E35180001C980 /* _ATTTalk.m */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		24437648185E35BA0001C980 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2443764F185E35BB0001C980 /* libDCTCoreDataStack.a */,
+				24437651185E35BB0001C980 /* libDCTCoreDataStack-OSX.a */,
+				24437653185E35BB0001C980 /* DCTCoreDataStackTests.octest */,
+				24437655185E35BB0001C980 /* CoreDataStack.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		2449AE17185E1E1300B1DC44 = {
@@ -217,6 +261,7 @@
 		2454B5BB185E28EF004C2FBD /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				24437647185E35BA0001C980 /* DCTCoreDataStack.xcodeproj */,
 				2454B5BC185E28FC004C2FBD /* ddcli.xcodeproj */,
 			);
 			name = Libraries;
@@ -310,6 +355,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 24437648185E35BA0001C980 /* Products */;
+					ProjectRef = 24437647185E35BA0001C980 /* DCTCoreDataStack.xcodeproj */;
+				},
+				{
 					ProductGroup = 2454B5BD185E28FC004C2FBD /* Products */;
 					ProjectRef = 2454B5BC185E28FC004C2FBD /* ddcli.xcodeproj */;
 				},
@@ -324,6 +373,34 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		2443764F185E35BB0001C980 /* libDCTCoreDataStack.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDCTCoreDataStack.a;
+			remoteRef = 2443764E185E35BB0001C980 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		24437651185E35BB0001C980 /* libDCTCoreDataStack-OSX.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libDCTCoreDataStack-OSX.a";
+			remoteRef = 24437650185E35BB0001C980 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		24437653185E35BB0001C980 /* DCTCoreDataStackTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DCTCoreDataStackTests.octest;
+			remoteRef = 24437652185E35BB0001C980 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		24437655185E35BB0001C980 /* CoreDataStack.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CoreDataStack.app;
+			remoteRef = 24437654185E35BB0001C980 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		2454B5C4185E28FD004C2FBD /* example */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
@@ -491,6 +568,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -524,6 +602,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

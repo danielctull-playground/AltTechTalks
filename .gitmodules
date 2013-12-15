@@ -1,3 +1,6 @@
 [submodule "ddcli"]
 	path = ddcli
 	url = git://github.com/danielctull-forks/ddcli.git
+[submodule "DCTCoreDataStack"]
+	path = DCTCoreDataStack
+	url = git://github.com/danielctull/DCTCoreDataStack.git
