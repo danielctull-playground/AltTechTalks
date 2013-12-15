@@ -1,14 +1,14 @@
-#import "ATTTalk.h"
+#import "ATTSpeaker.h"
 
 
-@interface ATTTalk ()
+@interface ATTSpeaker ()
 
 // Private interface goes here.
 
 @end
 
 
-@implementation ATTTalk
+@implementation ATTSpeaker
 
 // Custom logic goes here.
 

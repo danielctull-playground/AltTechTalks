@@ -8,7 +8,7 @@
 
 #import "ATTParser.h"
 #import "AltTechTalks.h"
-#import "ATTTalk.h"
+#import "ATTSpeaker.h"
 #import <DCTCoreDataStack/DCTCoreDataStack.h>
 
 @interface ATTParser ()
@@ -53,7 +53,7 @@
 
 	for (NSXMLNode *node in talkNodes) {
 
-		ATTTalk *talk = [ATTTalk insertInManagedObjectContext:coreDataStack.managedObjectContext];
+		ATTSpeaker *speaker = [ATTSpeaker insertInManagedObjectContext:coreDataStack.managedObjectContext];
 
 		// Find the image
 		NSArray *imageNodes = [node nodesForXPath:@"img" error:NULL];
@@ -63,7 +63,7 @@
 
 		// Create a unique filename and
 		NSString *imageFilename = [imageLocation lastPathComponent];
-		talk.imageName = imageFilename;
+		speaker.imageName = imageFilename;
 		NSURL *bundleImageURL = [bundleURL URLByAppendingPathComponent:imageFilename];
 
 		// Download the image and save it to the bundle
@@ -75,15 +75,15 @@
 		// Get the talk detail
 		NSArray *paragraphNodes = [node nodesForXPath:@"p" error:NULL];
 		NSXMLNode *paragraphNode = [paragraphNodes firstObject];
-		talk.detail = paragraphNode.stringValue;
+		speaker.detail = paragraphNode.stringValue;
 
 		NSArray *headingNodes = [node nodesForXPath:@"div[@class='media-body']/h4[@class='media-heading']" error:NULL];
 		NSXMLNode *headingNode = [headingNodes firstObject];
 		NSString *heading = headingNode.stringValue;
 
 		NSArray *components = [heading componentsSeparatedByString:@" - \""];
-		talk.speaker = [components firstObject];
-		talk.title = [[components lastObject] stringByReplacingOccurrencesOfString:@"\"" withString:@""];
+		speaker.name = [components firstObject];
+		speaker.talkTitle = [[components lastObject] stringByReplacingOccurrencesOfString:@"\"" withString:@""];
 	}
 
 	return 0;

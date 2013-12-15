@@ -11,13 +11,14 @@
 		24437638185E335B0001C980 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24437636185E335B0001C980 /* Model.xcdatamodeld */; };
 		2443763B185E33720001C980 /* AltTechTalks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443763A185E33720001C980 /* AltTechTalks.m */; };
 		2443763C185E33720001C980 /* AltTechTalks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443763A185E33720001C980 /* AltTechTalks.m */; };
-		24437643185E35180001C980 /* ATTTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443763F185E35180001C980 /* ATTTalk.m */; };
-		24437644185E35180001C980 /* ATTTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443763F185E35180001C980 /* ATTTalk.m */; };
-		24437645185E35180001C980 /* _ATTTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 24437642185E35180001C980 /* _ATTTalk.m */; };
-		24437646185E35180001C980 /* _ATTTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = 24437642185E35180001C980 /* _ATTTalk.m */; };
 		24437656185E35C80001C980 /* libDCTCoreDataStack-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24437651185E35BB0001C980 /* libDCTCoreDataStack-OSX.a */; };
 		24437657185E35CE0001C980 /* libDCTCoreDataStack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2443764F185E35BB0001C980 /* libDCTCoreDataStack.a */; };
 		24437659185E4B890001C980 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24437658185E4B890001C980 /* iPhone.storyboard */; };
+		2443765C185E4C1C0001C980 /* ATTSpeakersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443765B185E4C1C0001C980 /* ATTSpeakersViewController.m */; };
+		24437663185E4C700001C980 /* ATTSpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443765F185E4C700001C980 /* ATTSpeaker.m */; };
+		24437664185E4C700001C980 /* ATTSpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443765F185E4C700001C980 /* ATTSpeaker.m */; };
+		24437665185E4C700001C980 /* _ATTSpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 24437662185E4C700001C980 /* _ATTSpeaker.m */; };
+		24437666185E4C700001C980 /* _ATTSpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 24437662185E4C700001C980 /* _ATTSpeaker.m */; };
 		2449AE24185E1E1300B1DC44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE23185E1E1300B1DC44 /* Foundation.framework */; };
 		2449AE26185E1E1300B1DC44 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE25185E1E1300B1DC44 /* CoreGraphics.framework */; };
 		2449AE28185E1E1300B1DC44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE27185E1E1300B1DC44 /* UIKit.framework */; };
@@ -103,12 +104,14 @@
 		24437637185E335B0001C980 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		24437639185E33720001C980 /* AltTechTalks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AltTechTalks.h; sourceTree = "<group>"; };
 		2443763A185E33720001C980 /* AltTechTalks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AltTechTalks.m; sourceTree = "<group>"; };
-		2443763E185E35180001C980 /* ATTTalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTTalk.h; sourceTree = "<group>"; };
-		2443763F185E35180001C980 /* ATTTalk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTTalk.m; sourceTree = "<group>"; };
-		24437641185E35180001C980 /* _ATTTalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ATTTalk.h; sourceTree = "<group>"; };
-		24437642185E35180001C980 /* _ATTTalk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ATTTalk.m; sourceTree = "<group>"; };
 		24437647185E35BA0001C980 /* DCTCoreDataStack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DCTCoreDataStack.xcodeproj; path = DCTCoreDataStack/DCTCoreDataStack.xcodeproj; sourceTree = "<group>"; };
 		24437658185E4B890001C980 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		2443765A185E4C1C0001C980 /* ATTSpeakersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTSpeakersViewController.h; sourceTree = "<group>"; };
+		2443765B185E4C1C0001C980 /* ATTSpeakersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTSpeakersViewController.m; sourceTree = "<group>"; };
+		2443765E185E4C700001C980 /* ATTSpeaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTSpeaker.h; sourceTree = "<group>"; };
+		2443765F185E4C700001C980 /* ATTSpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTSpeaker.m; sourceTree = "<group>"; };
+		24437661185E4C700001C980 /* _ATTSpeaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ATTSpeaker.h; sourceTree = "<group>"; };
+		24437662185E4C700001C980 /* _ATTSpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ATTSpeaker.m; sourceTree = "<group>"; };
 		2449AE20185E1E1300B1DC44 /* AltTechTalks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AltTechTalks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2449AE23185E1E1300B1DC44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2449AE25185E1E1300B1DC44 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -161,25 +164,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2443763D185E35180001C980 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2443763E185E35180001C980 /* ATTTalk.h */,
-				2443763F185E35180001C980 /* ATTTalk.m */,
-				24437640185E35180001C980 /* Generated */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		24437640185E35180001C980 /* Generated */ = {
-			isa = PBXGroup;
-			children = (
-				24437641185E35180001C980 /* _ATTTalk.h */,
-				24437642185E35180001C980 /* _ATTTalk.m */,
-			);
-			path = Generated;
-			sourceTree = "<group>";
-		};
 		24437648185E35BA0001C980 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +173,25 @@
 				24437655185E35BB0001C980 /* CoreDataStack.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2443765D185E4C700001C980 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2443765E185E4C700001C980 /* ATTSpeaker.h */,
+				2443765F185E4C700001C980 /* ATTSpeaker.m */,
+				24437660185E4C700001C980 /* Generated */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24437660185E4C700001C980 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				24437661185E4C700001C980 /* _ATTSpeaker.h */,
+				24437662185E4C700001C980 /* _ATTSpeaker.m */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		2449AE17185E1E1300B1DC44 = {
@@ -238,7 +241,9 @@
 				24437658185E4B890001C980 /* iPhone.storyboard */,
 				24437639185E33720001C980 /* AltTechTalks.h */,
 				2443763A185E33720001C980 /* AltTechTalks.m */,
-				2443763D185E35180001C980 /* Model */,
+				2443765A185E4C1C0001C980 /* ATTSpeakersViewController.h */,
+				2443765B185E4C1C0001C980 /* ATTSpeakersViewController.m */,
+				2443765D185E4C700001C980 /* Model */,
 			);
 			path = AltTechTalks;
 			sourceTree = "<group>";
@@ -482,10 +487,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24437645185E35180001C980 /* _ATTTalk.m in Sources */,
 				2449AE34185E1E1300B1DC44 /* AppDelegate.m in Sources */,
-				24437643185E35180001C980 /* ATTTalk.m in Sources */,
+				24437665185E4C700001C980 /* _ATTSpeaker.m in Sources */,
 				2443763B185E33720001C980 /* AltTechTalks.m in Sources */,
+				2443765C185E4C1C0001C980 /* ATTSpeakersViewController.m in Sources */,
+				24437663185E4C700001C980 /* ATTSpeaker.m in Sources */,
 				2449AE30185E1E1300B1DC44 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,11 +500,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24437646185E35180001C980 /* _ATTTalk.m in Sources */,
 				24437635185E302A0001C980 /* ATTParser.m in Sources */,
-				24437644185E35180001C980 /* ATTTalk.m in Sources */,
 				2443763C185E33720001C980 /* AltTechTalks.m in Sources */,
 				2454B59E185E211B004C2FBD /* main.m in Sources */,
+				24437666185E4C700001C980 /* _ATTSpeaker.m in Sources */,
+				24437664185E4C700001C980 /* ATTSpeaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
