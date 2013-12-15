@@ -14,22 +14,7 @@
 		2449AE30185E1E1300B1DC44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2449AE2F185E1E1300B1DC44 /* main.m */; };
 		2449AE34185E1E1300B1DC44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2449AE33185E1E1300B1DC44 /* AppDelegate.m */; };
 		2449AE36185E1E1300B1DC44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2449AE35185E1E1300B1DC44 /* Images.xcassets */; };
-		2449AE3D185E1E1300B1DC44 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE3C185E1E1300B1DC44 /* XCTest.framework */; };
-		2449AE3E185E1E1300B1DC44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE23185E1E1300B1DC44 /* Foundation.framework */; };
-		2449AE3F185E1E1300B1DC44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE27185E1E1300B1DC44 /* UIKit.framework */; };
-		2449AE47185E1E1300B1DC44 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2449AE45185E1E1300B1DC44 /* InfoPlist.strings */; };
-		2449AE49185E1E1300B1DC44 /* AltTechTalksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2449AE48185E1E1300B1DC44 /* AltTechTalksTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2449AE40185E1E1300B1DC44 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2449AE18185E1E1300B1DC44 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2449AE1F185E1E1300B1DC44;
-			remoteInfo = AltTechTalks;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2449AE20185E1E1300B1DC44 /* AltTechTalks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AltTechTalks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,15 +24,10 @@
 		2449AE2B185E1E1300B1DC44 /* AltTechTalks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AltTechTalks-Info.plist"; sourceTree = "<group>"; };
 		2449AE2D185E1E1300B1DC44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2449AE2F185E1E1300B1DC44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2449AE31185E1E1300B1DC44 /* AltTechTalks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AltTechTalks-Prefix.pch"; sourceTree = "<group>"; };
 		2449AE32185E1E1300B1DC44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2449AE33185E1E1300B1DC44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2449AE35185E1E1300B1DC44 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2449AE3B185E1E1300B1DC44 /* AltTechTalksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AltTechTalksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2449AE3C185E1E1300B1DC44 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		2449AE44185E1E1300B1DC44 /* AltTechTalksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AltTechTalksTests-Info.plist"; sourceTree = "<group>"; };
-		2449AE46185E1E1300B1DC44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2449AE48185E1E1300B1DC44 /* AltTechTalksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AltTechTalksTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +41,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2449AE38185E1E1300B1DC44 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2449AE3D185E1E1300B1DC44 /* XCTest.framework in Frameworks */,
-				2449AE3F185E1E1300B1DC44 /* UIKit.framework in Frameworks */,
-				2449AE3E185E1E1300B1DC44 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,7 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				2449AE29185E1E1300B1DC44 /* AltTechTalks */,
-				2449AE42185E1E1300B1DC44 /* AltTechTalksTests */,
 				2449AE22185E1E1300B1DC44 /* Frameworks */,
 				2449AE21185E1E1300B1DC44 /* Products */,
 			);
@@ -88,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				2449AE20185E1E1300B1DC44 /* AltTechTalks.app */,
-				2449AE3B185E1E1300B1DC44 /* AltTechTalksTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,38 +78,11 @@
 				2449AE32185E1E1300B1DC44 /* AppDelegate.h */,
 				2449AE33185E1E1300B1DC44 /* AppDelegate.m */,
 				2449AE35185E1E1300B1DC44 /* Images.xcassets */,
-				2449AE2A185E1E1300B1DC44 /* Supporting Files */,
-			);
-			path = AltTechTalks;
-			sourceTree = "<group>";
-		};
-		2449AE2A185E1E1300B1DC44 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
 				2449AE2B185E1E1300B1DC44 /* AltTechTalks-Info.plist */,
 				2449AE2C185E1E1300B1DC44 /* InfoPlist.strings */,
 				2449AE2F185E1E1300B1DC44 /* main.m */,
-				2449AE31185E1E1300B1DC44 /* AltTechTalks-Prefix.pch */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2449AE42185E1E1300B1DC44 /* AltTechTalksTests */ = {
-			isa = PBXGroup;
-			children = (
-				2449AE48185E1E1300B1DC44 /* AltTechTalksTests.m */,
-				2449AE43185E1E1300B1DC44 /* Supporting Files */,
-			);
-			path = AltTechTalksTests;
-			sourceTree = "<group>";
-		};
-		2449AE43185E1E1300B1DC44 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2449AE44185E1E1300B1DC44 /* AltTechTalksTests-Info.plist */,
-				2449AE45185E1E1300B1DC44 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			path = AltTechTalks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,24 +105,6 @@
 			productReference = 2449AE20185E1E1300B1DC44 /* AltTechTalks.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2449AE3A185E1E1300B1DC44 /* AltTechTalksTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2449AE4F185E1E1300B1DC44 /* Build configuration list for PBXNativeTarget "AltTechTalksTests" */;
-			buildPhases = (
-				2449AE37185E1E1300B1DC44 /* Sources */,
-				2449AE38185E1E1300B1DC44 /* Frameworks */,
-				2449AE39185E1E1300B1DC44 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2449AE41185E1E1300B1DC44 /* PBXTargetDependency */,
-			);
-			name = AltTechTalksTests;
-			productName = AltTechTalksTests;
-			productReference = 2449AE3B185E1E1300B1DC44 /* AltTechTalksTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,11 +113,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Daniel Tull";
-				TargetAttributes = {
-					2449AE3A185E1E1300B1DC44 = {
-						TestTargetID = 2449AE1F185E1E1300B1DC44;
-					};
-				};
 			};
 			buildConfigurationList = 2449AE1B185E1E1300B1DC44 /* Build configuration list for PBXProject "AltTechTalks" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -209,7 +127,6 @@
 			projectRoot = "";
 			targets = (
 				2449AE1F185E1E1300B1DC44 /* AltTechTalks */,
-				2449AE3A185E1E1300B1DC44 /* AltTechTalksTests */,
 			);
 		};
 /* End PBXProject section */
@@ -221,14 +138,6 @@
 			files = (
 				2449AE2E185E1E1300B1DC44 /* InfoPlist.strings in Resources */,
 				2449AE36185E1E1300B1DC44 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2449AE39185E1E1300B1DC44 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2449AE47185E1E1300B1DC44 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,37 +153,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2449AE37185E1E1300B1DC44 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2449AE49185E1E1300B1DC44 /* AltTechTalksTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2449AE41185E1E1300B1DC44 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2449AE1F185E1E1300B1DC44 /* AltTechTalks */;
-			targetProxy = 2449AE40185E1E1300B1DC44 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2449AE2C185E1E1300B1DC44 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2449AE2D185E1E1300B1DC44 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2449AE45185E1E1300B1DC44 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2449AE46185E1E1300B1DC44 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -362,7 +247,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AltTechTalks/AltTechTalks-Prefix.pch";
 				INFOPLIST_FILE = "AltTechTalks/AltTechTalks-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -375,52 +259,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AltTechTalks/AltTechTalks-Prefix.pch";
 				INFOPLIST_FILE = "AltTechTalks/AltTechTalks-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		2449AE50185E1E1300B1DC44 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AltTechTalks.app/AltTechTalks";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AltTechTalks/AltTechTalks-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "AltTechTalksTests/AltTechTalksTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		2449AE51185E1E1300B1DC44 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AltTechTalks.app/AltTechTalks";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AltTechTalks/AltTechTalks-Prefix.pch";
-				INFOPLIST_FILE = "AltTechTalksTests/AltTechTalksTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -441,14 +282,6 @@
 			buildConfigurations = (
 				2449AE4D185E1E1300B1DC44 /* Debug */,
 				2449AE4E185E1E1300B1DC44 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		2449AE4F185E1E1300B1DC44 /* Build configuration list for PBXNativeTarget "AltTechTalksTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2449AE50185E1E1300B1DC44 /* Debug */,
-				2449AE51185E1E1300B1DC44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
