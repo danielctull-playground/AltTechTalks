@@ -13,5 +13,6 @@
 + (NSBundle *)bundle;
 + (NSURL *)modelURLForBundle:(NSBundle *)bundle;
 + (NSURL *)storeURLForBundle:(NSBundle *)bundle;
++ (NSURL *)URLForImageNamed:(NSString *)imageName inBundle:(NSBundle *)bundle;
 
 @end

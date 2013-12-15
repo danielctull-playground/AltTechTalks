@@ -22,8 +22,8 @@ static NSString *const AltTechTalksBundleName = @"AltTechTalks Bundle.bundle";
 																	errorHandler:NULL];
 
 		for (NSURL *URL in enumerator)
-		if ([[URL lastPathComponent] isEqualToString:AltTechTalksBundleName])
-		bundle = [NSBundle bundleWithURL:URL];
+			if ([[URL lastPathComponent] isEqualToString:AltTechTalksBundleName])
+				bundle = [NSBundle bundleWithURL:URL];
 	});
 
 	return bundle;
@@ -46,6 +46,10 @@ static NSString *const AltTechTalksBundleName = @"AltTechTalks Bundle.bundle";
 	}
 
 	return URL;
+}
+
++ (NSURL *)URLForImageNamed:(NSString *)imageName inBundle:(NSBundle *)bundle {
+	return [bundle URLForResource:imageName withExtension:nil];
 }
 
 @end

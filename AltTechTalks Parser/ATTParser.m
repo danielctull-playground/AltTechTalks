@@ -61,16 +61,21 @@
 		NSXMLNode *imageSRC = [imageNode attributeForName:@"src"];
 		NSString *imageLocation = imageSRC.stringValue;
 
-		// Create a unique filename and
-		NSString *imageFilename = [imageLocation lastPathComponent];
+		// Create the full URL for the image
+		NSURL *remoteImageURL = [NSURL URLWithString:imageLocation relativeToURL:dataURL];
+
+		// Create a unique filename by base64 encoding
+		NSData *imageLocationData = [imageLocation dataUsingEncoding:NSUTF8StringEncoding];
+		NSString *imageFilename = [imageLocationData base64EncodedStringWithOptions:0];
 		speaker.imageName = imageFilename;
 		NSURL *bundleImageURL = [bundleURL URLByAppendingPathComponent:imageFilename];
 
 		// Download the image and save it to the bundle
-		NSURL *remoteImageURL = [NSURL URLWithString:imageLocation relativeToURL:dataURL];
 		NSURLRequest *imageRequest = [NSURLRequest requestWithURL:remoteImageURL];
 		NSData *imageData = [NSURLConnection sendSynchronousRequest:imageRequest returningResponse:NULL error:NULL];
 		[fileManager createFileAtPath:[bundleImageURL path] contents:imageData attributes:nil];
+
+		NSLog(@"%@:%@ %@ %@", self, NSStringFromSelector(_cmd), imageLocation, remoteImageURL);
 
 		// Get the talk detail
 		NSArray *paragraphNodes = [node nodesForXPath:@"p" error:NULL];
@@ -85,6 +90,10 @@
 		speaker.name = [components firstObject];
 		speaker.talkTitle = [[components lastObject] stringByReplacingOccurrencesOfString:@"\"" withString:@""];
 	}
+
+	NSError *saveError = nil;
+	BOOL didSave = [coreDataStack.managedObjectContext save:&saveError];
+	if (!didSave) NSLog(@"%@:%@ %@", self, NSStringFromSelector(_cmd), saveError);
 
 	return 0;
 }

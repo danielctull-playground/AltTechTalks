@@ -1,5 +1,5 @@
 //
-//  ATTSpeakersViewController.h
+//  ATTSpeakerTableViewCell.h
 //  AltTechTalks
 //
 //  Created by Daniel Tull on 15.12.2013.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ATTSpeakersViewController : UITableViewController
+@interface ATTSpeakerTableViewCell : UITableViewCell
 
 @end
