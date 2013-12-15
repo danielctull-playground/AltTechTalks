@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		24437635185E302A0001C980 /* ATTParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 24437634185E302A0001C980 /* ATTParser.m */; };
+		24437638185E335B0001C980 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24437636185E335B0001C980 /* Model.xcdatamodeld */; };
+		2443763B185E33720001C980 /* AltTechTalks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443763A185E33720001C980 /* AltTechTalks.m */; };
+		2443763C185E33720001C980 /* AltTechTalks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443763A185E33720001C980 /* AltTechTalks.m */; };
 		2449AE24185E1E1300B1DC44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE23185E1E1300B1DC44 /* Foundation.framework */; };
 		2449AE26185E1E1300B1DC44 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE25185E1E1300B1DC44 /* CoreGraphics.framework */; };
 		2449AE28185E1E1300B1DC44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE27185E1E1300B1DC44 /* UIKit.framework */; };
@@ -62,6 +65,9 @@
 /* Begin PBXFileReference section */
 		24437633185E302A0001C980 /* ATTParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTParser.h; sourceTree = "<group>"; };
 		24437634185E302A0001C980 /* ATTParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTParser.m; sourceTree = "<group>"; };
+		24437637185E335B0001C980 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		24437639185E33720001C980 /* AltTechTalks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AltTechTalks.h; sourceTree = "<group>"; };
+		2443763A185E33720001C980 /* AltTechTalks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AltTechTalks.m; sourceTree = "<group>"; };
 		2449AE20185E1E1300B1DC44 /* AltTechTalks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AltTechTalks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2449AE23185E1E1300B1DC44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2449AE25185E1E1300B1DC44 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -155,6 +161,9 @@
 				2449AE2B185E1E1300B1DC44 /* AltTechTalks-Info.plist */,
 				2449AE2C185E1E1300B1DC44 /* InfoPlist.strings */,
 				2449AE2F185E1E1300B1DC44 /* main.m */,
+				24437636185E335B0001C980 /* Model.xcdatamodeld */,
+				24437639185E33720001C980 /* AltTechTalks.h */,
+				2443763A185E33720001C980 /* AltTechTalks.m */,
 			);
 			path = AltTechTalks;
 			sourceTree = "<group>";
@@ -365,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2449AE34185E1E1300B1DC44 /* AppDelegate.m in Sources */,
+				2443763B185E33720001C980 /* AltTechTalks.m in Sources */,
 				2449AE30185E1E1300B1DC44 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24437635185E302A0001C980 /* ATTParser.m in Sources */,
+				2443763C185E33720001C980 /* AltTechTalks.m in Sources */,
 				2454B59E185E211B004C2FBD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24437638185E335B0001C980 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +632,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		24437636185E335B0001C980 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				24437637185E335B0001C980 /* Model.xcdatamodel */,
+			);
+			currentVersion = 24437637185E335B0001C980 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2449AE18185E1E1300B1DC44 /* Project object */;
 }
