@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24437635185E302A0001C980 /* ATTParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 24437634185E302A0001C980 /* ATTParser.m */; };
 		2449AE24185E1E1300B1DC44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE23185E1E1300B1DC44 /* Foundation.framework */; };
 		2449AE26185E1E1300B1DC44 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE25185E1E1300B1DC44 /* CoreGraphics.framework */; };
 		2449AE28185E1E1300B1DC44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE27185E1E1300B1DC44 /* UIKit.framework */; };
@@ -59,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24437633185E302A0001C980 /* ATTParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTParser.h; sourceTree = "<group>"; };
+		24437634185E302A0001C980 /* ATTParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTParser.m; sourceTree = "<group>"; };
 		2449AE20185E1E1300B1DC44 /* AltTechTalks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AltTechTalks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2449AE23185E1E1300B1DC44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2449AE25185E1E1300B1DC44 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -160,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				2454B59D185E211B004C2FBD /* main.m */,
+				24437633185E302A0001C980 /* ATTParser.h */,
+				24437634185E302A0001C980 /* ATTParser.m */,
 			);
 			path = "AltTechTalks Parser";
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2449AE4C185E1E1300B1DC44 /* Build configuration list for PBXNativeTarget "AltTechTalks" */;
 			buildPhases = (
+				24437632185E2EDF0001C980 /* Run Parser */,
 				2449AE1C185E1E1300B1DC44 /* Sources */,
 				2449AE1D185E1E1300B1DC44 /* Frameworks */,
 				2449AE1E185E1E1300B1DC44 /* Resources */,
@@ -337,6 +343,20 @@
 			shellPath = /bin/sh;
 			shellScript = "CP \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${BUILD_ROOT}\"\n";
 		};
+		24437632185E2EDF0001C980 /* Run Parser */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Parser";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PARSER=\"${BUILD_ROOT}/AltTechTalks Parser\"\nBUNDLE=\"${CONFIGURATION_BUILD_DIR}/AltTechTalks Bundle.bundle\"\n\n\"$PARSER\" -b \"$BUNDLE\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -353,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24437635185E302A0001C980 /* ATTParser.m in Sources */,
 				2454B59E185E211B004C2FBD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +519,11 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/ddcli/lib",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -510,6 +536,11 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/ddcli/lib",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;

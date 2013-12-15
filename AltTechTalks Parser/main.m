@@ -6,17 +6,12 @@
 //  Copyright (c) 2013 Daniel Tull. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ATTParser.h"
 
-int main(int argc, const char * argv[])
-{
+int main(int argc, const char * argv[]) {
 
 	@autoreleasepool {
-	    
-	    // insert code here...
-	    NSLog(@"Hello, World!");
-	    
+		return DDCliAppRunWithDefaultClass([ATTParser class]);
 	}
-    return 0;
 }
 
