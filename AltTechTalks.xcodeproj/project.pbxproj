@@ -17,6 +17,7 @@
 		2454B59B185E211B004C2FBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE23185E1E1300B1DC44 /* Foundation.framework */; };
 		2454B59E185E211B004C2FBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2454B59D185E211B004C2FBD /* main.m */; };
 		2454B5AC185E25D4004C2FBD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2454B5AB185E25D4004C2FBD /* CoreFoundation.framework */; };
+		2454B5C9185E290E004C2FBD /* libddcli.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2454B5C8185E28FD004C2FBD /* libddcli.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +35,28 @@
 			remoteGlobalIDString = 2454B599185E211B004C2FBD;
 			remoteInfo = "AltTechTalks Parser";
 		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		2454B598185E211B004C2FBD /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
+		2454B5C3185E28FD004C2FBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2454B5BC185E28FC004C2FBD /* ddcli.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = example;
 		};
-/* End PBXCopyFilesBuildPhase section */
+		2454B5C5185E28FD004C2FBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2454B5BC185E28FC004C2FBD /* ddcli.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55CCE9760C1380C900FA06C6;
+			remoteInfo = simple;
+		};
+		2454B5C7185E28FD004C2FBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2454B5BC185E28FC004C2FBD /* ddcli.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55CCE92E0C137F7D00FA06C6;
+			remoteInfo = ddcli;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2449AE20185E1E1300B1DC44 /* AltTechTalks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AltTechTalks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +75,7 @@
 		2454B5AA185E25D4004C2FBD /* AltTechTalks Bundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AltTechTalks Bundle.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2454B5AB185E25D4004C2FBD /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		2454B5AF185E25D4004C2FBD /* AltTechTalks Bundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AltTechTalks Bundle-Info.plist"; sourceTree = "<group>"; };
+		2454B5BC185E28FC004C2FBD /* ddcli.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ddcli.xcodeproj; path = ddcli/ddcli.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2454B5C9185E290E004C2FBD /* libddcli.a in Frameworks */,
 				2454B59B185E211B004C2FBD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +115,7 @@
 				2449AE29185E1E1300B1DC44 /* AltTechTalks */,
 				2454B59C185E211B004C2FBD /* AltTechTalks Parser */,
 				2454B5AD185E25D4004C2FBD /* AltTechTalks Bundle */,
+				2454B5BB185E28EF004C2FBD /* Libraries */,
 				2449AE22185E1E1300B1DC44 /* Frameworks */,
 				2449AE21185E1E1300B1DC44 /* Products */,
 			);
@@ -159,6 +172,24 @@
 			path = "AltTechTalks Bundle";
 			sourceTree = "<group>";
 		};
+		2454B5BB185E28EF004C2FBD /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2454B5BC185E28FC004C2FBD /* ddcli.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		2454B5BD185E28FC004C2FBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2454B5C4185E28FD004C2FBD /* example */,
+				2454B5C6185E28FD004C2FBD /* simple */,
+				2454B5C8185E28FD004C2FBD /* libddcli.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,7 +217,7 @@
 			buildPhases = (
 				2454B596185E211B004C2FBD /* Sources */,
 				2454B597185E211B004C2FBD /* Frameworks */,
-				2454B598185E211B004C2FBD /* CopyFiles */,
+				24437631185E2DDE0001C980 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -234,6 +265,12 @@
 			mainGroup = 2449AE17185E1E1300B1DC44;
 			productRefGroup = 2449AE21185E1E1300B1DC44 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2454B5BD185E28FC004C2FBD /* Products */;
+					ProjectRef = 2454B5BC185E28FC004C2FBD /* ddcli.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2449AE1F185E1E1300B1DC44 /* AltTechTalks */,
@@ -242,6 +279,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2454B5C4185E28FD004C2FBD /* example */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = example;
+			remoteRef = 2454B5C3185E28FD004C2FBD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2454B5C6185E28FD004C2FBD /* simple */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = simple;
+			remoteRef = 2454B5C5185E28FD004C2FBD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2454B5C8185E28FD004C2FBD /* libddcli.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libddcli.a;
+			remoteRef = 2454B5C7185E28FD004C2FBD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2449AE1E185E1E1300B1DC44 /* Resources */ = {
@@ -261,6 +322,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24437631185E2DDE0001C980 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "CP \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${BUILD_ROOT}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2449AE1C185E1E1300B1DC44 /* Sources */ = {
@@ -453,7 +530,6 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -469,7 +545,6 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -502,6 +577,7 @@
 				2454B5A4185E211B004C2FBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2454B5B4185E25D4004C2FBD /* Build configuration list for PBXNativeTarget "AltTechTalks Bundle" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +586,7 @@
 				2454B5B6185E25D4004C2FBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
