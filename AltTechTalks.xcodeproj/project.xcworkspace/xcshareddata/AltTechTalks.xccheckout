@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9ED122B5-9D22-4D49-9BAA-47781C403C52</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AltTechTalks</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>034368E9-2E6A-4E19-8D36-47461EC61061</key>
+		<string>git://github.com/danielctull-forks/ddcli.git</string>
+		<key>0AE0A801-FAAA-4398-BADB-BDF55CF6D9DA</key>
+		<string>git://github.com/danielctull/DCTCoreDataStack.git</string>
+		<key>8B760203-9B0D-4C76-864F-C45DDDE7EAC1</key>
+		<string>ssh://github.com/danielctull-playground/AltTechTalks.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AltTechTalks.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>034368E9-2E6A-4E19-8D36-47461EC61061</key>
+		<string>../../ddcli</string>
+		<key>0AE0A801-FAAA-4398-BADB-BDF55CF6D9DA</key>
+		<string>../../DCTCoreDataStack</string>
+		<key>8B760203-9B0D-4C76-864F-C45DDDE7EAC1</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/danielctull-playground/AltTechTalks.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8B760203-9B0D-4C76-864F-C45DDDE7EAC1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8B760203-9B0D-4C76-864F-C45DDDE7EAC1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AltTechTalks</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0AE0A801-FAAA-4398-BADB-BDF55CF6D9DA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DCTCoreDataStack</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>034368E9-2E6A-4E19-8D36-47461EC61061</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ddcli</string>
+		</dict>
+	</array>
+</dict>
+</plist>
