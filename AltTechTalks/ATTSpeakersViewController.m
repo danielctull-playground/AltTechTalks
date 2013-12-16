@@ -9,7 +9,6 @@
 #import "ATTSpeakersViewController.h"
 #import "AltTechTalks.h"
 #import "ATTSpeaker.h"
-#import "ATTSpeakerTableViewCell.h"
 #import "ATTSpeakerDetailViewController.h"
 #import <DCTCoreDataStack/DCTCoreDataStack.h>
 

@@ -19,7 +19,6 @@
 		24437664185E4C700001C980 /* ATTSpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443765F185E4C700001C980 /* ATTSpeaker.m */; };
 		24437665185E4C700001C980 /* _ATTSpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 24437662185E4C700001C980 /* _ATTSpeaker.m */; };
 		24437666185E4C700001C980 /* _ATTSpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 24437662185E4C700001C980 /* _ATTSpeaker.m */; };
-		24437669185E4DEF0001C980 /* ATTSpeakerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24437668185E4DEF0001C980 /* ATTSpeakerTableViewCell.m */; };
 		2443766A185E4EC40001C980 /* AltTechTalks Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2454B5AA185E25D4004C2FBD /* AltTechTalks Bundle.bundle */; };
 		2443766D185E53470001C980 /* ATTSpeakerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2443766C185E53470001C980 /* ATTSpeakerDetailViewController.m */; };
 		2449AE24185E1E1300B1DC44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449AE23185E1E1300B1DC44 /* Foundation.framework */; };
@@ -115,8 +114,6 @@
 		2443765F185E4C700001C980 /* ATTSpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTSpeaker.m; sourceTree = "<group>"; };
 		24437661185E4C700001C980 /* _ATTSpeaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ATTSpeaker.h; sourceTree = "<group>"; };
 		24437662185E4C700001C980 /* _ATTSpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ATTSpeaker.m; sourceTree = "<group>"; };
-		24437667185E4DEF0001C980 /* ATTSpeakerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTSpeakerTableViewCell.h; sourceTree = "<group>"; };
-		24437668185E4DEF0001C980 /* ATTSpeakerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTSpeakerTableViewCell.m; sourceTree = "<group>"; };
 		2443766B185E53470001C980 /* ATTSpeakerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTSpeakerDetailViewController.h; sourceTree = "<group>"; };
 		2443766C185E53470001C980 /* ATTSpeakerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTSpeakerDetailViewController.m; sourceTree = "<group>"; };
 		2449AE20185E1E1300B1DC44 /* AltTechTalks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AltTechTalks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -250,8 +247,6 @@
 				2443763A185E33720001C980 /* AltTechTalks.m */,
 				2443765A185E4C1C0001C980 /* ATTSpeakersViewController.h */,
 				2443765B185E4C1C0001C980 /* ATTSpeakersViewController.m */,
-				24437667185E4DEF0001C980 /* ATTSpeakerTableViewCell.h */,
-				24437668185E4DEF0001C980 /* ATTSpeakerTableViewCell.m */,
 				2443766B185E53470001C980 /* ATTSpeakerDetailViewController.h */,
 				2443766C185E53470001C980 /* ATTSpeakerDetailViewController.m */,
 				2443765D185E4C700001C980 /* Model */,
@@ -500,7 +495,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2449AE34185E1E1300B1DC44 /* AppDelegate.m in Sources */,
-				24437669185E4DEF0001C980 /* ATTSpeakerTableViewCell.m in Sources */,
 				2443766D185E53470001C980 /* ATTSpeakerDetailViewController.m in Sources */,
 				24437665185E4C700001C980 /* _ATTSpeaker.m in Sources */,
 				2443763B185E33720001C980 /* AltTechTalks.m in Sources */,
