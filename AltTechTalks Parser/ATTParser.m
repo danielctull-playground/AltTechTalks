@@ -44,9 +44,10 @@
 	NSURL *dataURL = [NSURL URLWithString:@"http://london.alttechtalks.com"];
 	NSURLRequest *request = [NSURLRequest requestWithURL:dataURL];
 	NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:NULL];
+	NSString *XMLString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 
 	NSError *XMLError = nil;
-	NSXMLDocument *XMLDocument = [[NSXMLDocument alloc] initWithData:data options:NSXMLDocumentTidyHTML error:&XMLError];
+	NSXMLDocument *XMLDocument = [[NSXMLDocument alloc] initWithXMLString:XMLString options:NSXMLDocumentTidyHTML error:&XMLError];
 	if (!XMLDocument) NSLog(@"%@:%@ %@", self, NSStringFromSelector(_cmd), XMLError);
 
 	NSArray *talkNodes = [XMLDocument.rootElement nodesForXPath:@"//ul[@class='media-list']/li[@class='media']" error:NULL];
